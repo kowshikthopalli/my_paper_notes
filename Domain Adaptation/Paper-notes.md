@@ -16,8 +16,9 @@ features/labels distribution instead of only considering the features distributi
 i.e their cost function is the weighted sum of both the squared euclidean between the distributions along with the labels - refer to eqn 3.
 
 
-The use feature outputs(last but one layer) of CNNs as the distribution and try to do OT. Since these are of large size- do stochastic i.e., in minibatches
-Two things to be optimized
+The use feature outputs(last but one layer) of CNNs as the distribution and try to do OT. Since these are of large size- do stochastic i.e., in minibatches.
+
+There are Two groups to be optimized
 - the optimal coupling \gamma 
 - the CNN's embedding function g:x-> z and f: z-> labels. 
 their proposal is to fix one optimize other and repeat this till convergence between all minibatches. 
@@ -31,4 +32,11 @@ So now we have weighted sum of three loss
 3. the OT loss. which is the dot product of the \gamma and the ground cost or distance between CNN features
 
 See algorithm 1 for a clear understanding. 
+
+An important note from the paper - ** The expected value over the minibtaches
+does not converge to the true OT coupling between every pair of samples, which
+might then lead to the appearance of connections between samples that would
+not have been connected in the full coupling. However, this can also be seen
+as a regularization that will promote sharing of the mass between neighboring
+sample **
 
