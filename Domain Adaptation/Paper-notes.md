@@ -33,10 +33,10 @@ So now we have weighted sum of three loss
 
 See algorithm 1 for a clear understanding. 
 
-An important note from the paper - ** The expected value over the minibtaches
+An important note from the paper - **The expected value over the minibtaches
 does not converge to the true OT coupling between every pair of samples, which
 might then lead to the appearance of connections between samples that would
 not have been connected in the full coupling. However, this can also be seen
 as a regularization that will promote sharing of the mass between neighboring
-sample **
+sample**
 
