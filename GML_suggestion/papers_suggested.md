@@ -13,3 +13,5 @@ https://arxiv.org/abs/1805.08097
 Wei Zhu, Qiang Qiu, Jiaji Huang, Robert Calderbank, Guillermo Sapiro, Ingrid Daubechies
 https://arxiv.org/abs/1711.06246
 
+5.All-optical machine learning using diffractive deep neural networks http://science.sciencemag.org/content/early/2018/07/25/science.aat8084/tab-pdf
+
